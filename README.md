@@ -8,7 +8,7 @@ The main goal is to document my progress in mastering Java, Algorithmic Logic, a
 
 ## Repository Structure
 
-The project is organized by practical worksheets ("Fichas"), covering the following topics:
+The project is organized by practical worksheets, covering the following topics:
 
 | Worksheet | Topic | Key Concepts |
 | :--- | :--- | :--- |
@@ -38,4 +38,5 @@ The project is organized by practical worksheets ("Fichas"), covering the follow
 
 ---
 **Author:** Gonçalo Simões Pereira
+
 *Computer Science Student at University of Minho*
