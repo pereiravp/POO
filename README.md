@@ -23,7 +23,7 @@ The project is organized by practical worksheets, covering the following topics:
 * **IDE:** VS Code / IntelliJ IDEA
 * **Version Control:** Git
 
-## 🛠️ How to Run
+## 🛠️  How to Run
 
 1.  Clone the repository:
     ```bash
