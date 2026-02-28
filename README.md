@@ -25,7 +25,7 @@ The project is organized by practical worksheets, covering the following topics:
 
 | Worksheet | Topic | Key Concepts |
 
-| :--- | :--- | :--- |
+
 
 | **Ficha 1** | Introduction to Java | `Primitive Types`, `Control Flow`, `I/O` |
 
