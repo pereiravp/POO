@@ -23,18 +23,12 @@ The project is organized by practical worksheets, covering the following topics:
 * **IDE:** VS Code / IntelliJ IDEA
 * **Version Control:** Git
 
-## 🛠️  How to Run
+## How to Run
 
-1.  Clone the repository:
-    ```bash
-    git clone [https://github.com/pereiravp/uminho-poo-worksheets.git](https://github.com/pereiravp/uminho-poo-worksheets.git)
-    ```
-2.  Navigate to the specific folder (e.g., `Ficha1`).
-3.  Compile and run the desired exercise:
-    ```bash
-    javac Ex1.java
-    java Ex1
-    ```
+### General Instructions
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/pereiravp/uminho-poo-worksheets.git](https://github.com/pereiravp/uminho-poo-worksheets.git)
 
 ---
 **Author:** Gonçalo Simões Pereira
