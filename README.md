@@ -42,7 +42,7 @@ The project is organized by practical worksheets, covering the following topics:
 * **Language:** Java (JDK 17+)
 
 * **IDE:** VS Code / IntelliJ IDEA
-```markdown
+  
 
 ### Executing Worksheet 1 (Standalone Files)
 
