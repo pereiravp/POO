@@ -13,9 +13,9 @@ in English.
 
 ## Authors
 
-- Gonçalo Pereira (nº 111783) — [@pereiravp](https://github.com/pereiravp)
-- David Mimoso (nº 111115) — [@davidmimoso](https://github.com/davidmimoso)
-- Tiago Du (nº 112235)
+- Gonçalo Pereira — [@pereiravp](https://github.com/pereiravp)
+- David Mimoso — [@davidmimoso](https://github.com/davidmimoso)
+- Tiago Du
 
 ## What it does
 
