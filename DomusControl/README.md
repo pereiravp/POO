@@ -15,7 +15,7 @@ in English.
 
 - Gonçalo Pereira — [@pereiravp](https://github.com/pereiravp)
 - David Mimoso — [@davidmimoso](https://github.com/davidmimoso)
-- Tiago Du
+- Tiago Du - [@Tiago-Du](https://github.com/Tiago-Du)
 
 ## What it does
 
