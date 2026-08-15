@@ -2,7 +2,7 @@
 
 A text-based smart home management system written in Java, inspired by
 platforms like Home Assistant. You create houses, split them into rooms, fill
-those rooms with connected devices, and then control everything — individually,
+those rooms with connected devices, and then control everything: individually,
 on a schedule, or through automations and scenes. A virtual clock lets you
 fast-forward time and watch energy consumption add up.
 
@@ -13,29 +13,26 @@ in English.
 
 ## Authors
 
-- Gonçalo Pereira — [@pereiravp](https://github.com/pereiravp)
-- David Mimoso — [@davidmimoso](https://github.com/davidmimoso)
-- Tiago Du - [@Tiago-Du](https://github.com/Tiago-Du)
+- Gonçalo Pereira ([@pereiravp](https://github.com/pereiravp))
+- David Mimoso ([@davidmimoso](https://github.com/davidmimoso))
+- Tiago Du ([@Tiago-Du](https://github.com/Tiago-Du))
 
 ## What it does
 
-- **Users and houses.** Register users, create houses, divide them into rooms,
-  and assign devices to rooms. A house has an owner and can grant access to
-  other users, as administrators or as regular guests.
-- **Devices.** Eight device types, all sharing a common base: relay, light bulb,
-  speaker, blind, air conditioner, sprinkler and robot vacuum. Each has its own
-  behaviour and its own way of consuming energy — a dimmed bulb draws less, a
-  speaker draws more with the bass on, a vacuum draws nothing while it runs off
-  its own battery.
-- **Automations, schedules and scenes.** Turn several devices on or off at once
-  ("Leaving Home", "Movie Night"), schedule actions for a given time, and let
-  smart rules react to conditions (a rain sensor switching off the sprinklers).
-- **Simulation.** A virtual clock advances minute by minute, running the
-  schedule, applying the rules and accumulating energy use as it goes.
-- **Statistics and billing.** Total and per-room consumption, the most-used
-  devices, and an electricity bill calculated by the chosen energy provider.
-- **Persistence.** The whole state is saved to and loaded from binary object
-  files, so you can pick up where you left off.
+You register users, create houses, split them into rooms, and assign devices
+to each room, with owners and access levels for administrators or guests.
+
+Eight device types share a common base (relay, light bulb, speaker, blind,
+air conditioner, sprinkler, robot vacuum), each with its own energy draw: a
+dimmed bulb uses less, a louder speaker uses more, the vacuum runs off its
+own battery. On top of that: automations and scenes that group devices
+("Leaving Home", "Movie Night"), schedules, and rules that react to
+conditions, like a rain sensor switching the sprinklers off.
+
+A virtual clock drives all of it minute by minute, running schedules,
+applying rules, and adding up energy use into statistics and billing. State
+saves to and loads from binary object files, so you can close the app and
+pick up later where you left off.
 
 ## Requirements
 
@@ -71,18 +68,18 @@ src/
   logic/          Agendamento (scheduled tasks)
   ui/             text menus and input helpers
   persistencia/   saving/loading state (GestorDados)
-  app/            Main — wires everything together
+  app/            Main: wires everything together
 tests/            a small no-framework test suite
 ```
 
-The design keeps the layers apart. The domain classes never print to the
-screen: they expose data and let the UI decide how to show it. The `Main` class
-only coordinates — loading, handing control to the menu, and saving — while the
-actual file I/O lives in `persistencia/GestorDados`.
+The layers stay separate: domain classes never print to the screen, they just
+expose data and leave the UI to decide how to show it. `Main` only
+coordinates (loads, hands control to the menu, saves), and the actual file I/O
+lives in `persistencia/GestorDados`.
 
 Every domain class follows the same canonical shape expected in Java OOP: a copy
 constructor, `equals` and `hashCode` that agree with each other, `clone`, and a
-readable `toString`. Copies are deep where it matters — cloning a house clones
+readable `toString`. Copies are deep where it matters: cloning a house clones
 its rooms, their devices, its automations and its energy provider, so the copy
 is fully independent of the original.
 
@@ -100,5 +97,5 @@ a save/load round-trip.
 
 - Column labels for devices and IDs are short generated codes; they're meant to
   be unique, not memorable.
-- The energy simulation is deliberately simple — enough to produce meaningful
+- The energy simulation is deliberately simple, enough to produce meaningful
   statistics without pretending to be physically exact.
